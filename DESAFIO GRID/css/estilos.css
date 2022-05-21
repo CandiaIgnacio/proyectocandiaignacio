@@ -33,6 +33,7 @@
     display: flex;
     list-style: none;
     gap: 80px;
+    transition: all 300ms;
 }
 
 .navegador li a {
@@ -40,6 +41,10 @@
     font-size: 1.7rem;
     color: red;
     font-family: 'Slabo 13px';
+
+}
+.navegador:hover {
+    transform: scale(1.1);
 }
 
 .img-fondo {
@@ -55,6 +60,7 @@
 
 }
 
+
 .img-footer {
     margin-left: 47%;
     width: 7%;
@@ -67,6 +73,7 @@
     text-align: center;
     background-color: rgb(192, 186, 186);
 }
+
 .form {
     background-color: red;
 }
@@ -115,6 +122,64 @@
     grid-column-start: span 2;
 }
 
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 33%;
+    height: 50vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    border: 3px solid rgb(243, 6, 6, 0.5);
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capas {
+    width: 0%;
+    height: 50vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .4s all;
+}
+.capas h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.box:hover .capas {
+    width: 100%;
+}
+.carousel slide {
+    width: 100%;
+    height: 100vh;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100vh;
+}
+
+
 @media screen and (max-width:850px) {
     .container-img {
         width: 95%;
@@ -144,8 +209,9 @@
 
     .navegador li a {
         font-size: 0.6rem;
-        
+
     }
+
     .navegador ul {
         gap: 60px;
     }
@@ -167,14 +233,15 @@
     .boton {
         margin-left: 43%;
     }
-    
+
     .form {
         width: 91%;
     }
+
     .img-footer {
         margin-top: 50%;
     }
-    
+
     .img-fondo {
         margin-top: 20%;
     }
