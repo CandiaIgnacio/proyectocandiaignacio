@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Slabo+13px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Blaka+Hollow&family=Macondo&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ESTILOS PAGINA INDEX */
+._5wCQW {
+    min-height: 100vh;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.botoninicio {
+    padding-top: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+
+.button {
+    display: inline-block;
+    border: none;
+    height: 0;
+    border-radius: 0;
+    padding: 0;
+    width: 110px;
+    background-color: rgba(0, 0, 0, 0.712);
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+
+}
+
+/* ESTILOS PARA INICIO*/
+
+.cuerpo {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+
+}
+.piedepagina {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-areas: imagen;
+    width: 100%;
+    height: 30%;
+    align-items: end;
+
+}
+
+.main-inicio {
+    background-image: url(../imagenes/fondo\ la\ cura.jpg);
+    background-size: cover;
+
+
+}
+
+.logoArde {
+    font-size: 5rem;
+    color: red;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    gap: 20px;
+
+}
+
+
+
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #000000;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: rgb(255, 4, 4);
+    box-shadow: 0 0 20px #ff0000;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: rgb(255, 4, 4);
+    box-shadow: 0 0 20px #ff0000;
+}
+
+.icon:hover:nth-child(3) {
+    background-color: rgb(255, 4, 4);
+    box-shadow: 0 0 20px #ff0000;
+}
+
+.icon {
+    background-color: rgb(255, 0, 0);
+}
+
+.icon i {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 500;
+}
+
+.navegador {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    transition: all 300ms;
+}
+
+.navegador li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(252, 0, 0);
+    font-family: 'Bebas Neue', cursive;
+    margin: 1rem;
+    padding: 2.5rem;
+}
+
+
+.navegador:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+.formulario {
+    color: rgb(236, 10, 10);
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.form {
+    background-color: red;
+}
+
+.casilla {
+    margin-left: 44%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.boton {
+    margin-left: 48%;
+
+
+}
+
+/* CONTAINER DE FOTOS */
+
+.container-img {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+
+}
+
+.container-img .box-img figure {
+    width: 100%;
+    height: 100%;
+}
+
+.container-img .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-img .box-img:nth-child(1) {
+    grid-column-start: span 2;
+}
+
+.container-img .box-img:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 33%;
+    height: 50vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    border: 3px solid rgb(243, 6, 6, 0.5);
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capas {
+    width: 0%;
+    height: 50vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .4s all;
+}
+
+.capas h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.box:hover .capas {
+    width: 100%;
+}
+
+
+/* CARRUSEL DE IMAGENES */
+
+.carousel-item {
+    background-color: black;
+}
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+
+}
+.carousel-item img {
+    margin: auto;
+    width: 35%;
+    height: 50%;
+
+}
+
+.carousel-control-next-icon {
+    background-color: red;
+}
+
+.carousel-control-prev-icon {
+    background-color: red;
+}
+
+
+
+/* MEDIAS QUERYS */
+
+@media screen and (max-width:850px) {
+    .container-img {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+
+    .container-img .box-img:nth-child(1) {
+        grid-column-start: span 1;
+    }
+
+    .navegador li a {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container-img {
+        width: 90%;
+        grid-template-columns: repeat(1, 3fr);
+    }
+
+    .container-img .box-img img {
+        height: 200px;
+    }
+
+    .navegador li a {
+        font-size: 0.6rem;
+
+    }
+
+    .navegador ul {
+        gap: 60px;
+    }
+
+    .logo-encabezado {
+        width: 40%;
+    }
+
+    .formulario {
+        width: 30%;
+        margin-left: 20%;
+    }
+
+    .casilla {
+        width: 40%;
+        margin-left: 25%;
+    }
+
+    .boton {
+        margin-left: 43%;
+    }
+
+    .form {
+        width: 91%;
+    }
+
+    .img-footer {
+        margin-top: 50%;
+    }
+
+    .img-fondo {
+        margin-top: 20%;
+    }
+}
