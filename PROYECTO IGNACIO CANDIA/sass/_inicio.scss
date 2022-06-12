@@ -1,0 +1,13 @@
+
+.main-inicio {
+    background-image: url(../imagenes/fondo\ la\ cura.jpg);
+    background-size: cover;
+}
+
+.cuerpo {
+    margin: 0;
+    background-color: rgb(122, 3, 3);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}

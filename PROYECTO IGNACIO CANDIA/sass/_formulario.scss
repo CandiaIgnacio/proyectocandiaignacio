@@ -1,0 +1,26 @@
+.formulario {
+    color: map-get($colores, rojo );
+    font-family: 'Oswald', sans-serif;
+    text-align: map-get($posicion, centrado );
+    background-color: map-get($colores , negro);
+    width: 30%;
+    margin-left: 20%;
+}
+
+.form {
+    background-color: map-get($colores , rojo);
+    width: 91%;
+}
+
+.casilla {
+    margin-left: 44%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 40%;
+    margin-left: 25%;
+}
+
+.boton {
+    margin-left: 48%;
+    margin-left: 43%;
+}

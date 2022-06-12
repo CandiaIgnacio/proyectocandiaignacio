@@ -1,0 +1,42 @@
+.logoArde {
+    font-size: 5rem;
+    color: map-get($colores , blanco);
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: map-get($posicion, centrado );
+    justify-content: map-get($posicion, centrado );
+    background-color: map-get($colores , negro);
+    gap: 20px;
+}
+.navegador {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    transition: all 300ms;
+
+    li {
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: map-get($colores , blanco);
+            font-family: 'Bebas Neue', cursive;
+            margin: 1rem;
+            padding: 2.5rem;
+            font-size: 1.4rem;
+            font-size: 0.6rem;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    ul {
+        gap: 60px;
+    }
+}

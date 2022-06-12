@@ -1,0 +1,10 @@
+@mixin alto-ancho ($alto,$ancho) {
+width: $ancho;
+height: $alto;
+}
+
+
+@mixin flex-absolute {
+    display: flex;
+    position: absolute;
+}

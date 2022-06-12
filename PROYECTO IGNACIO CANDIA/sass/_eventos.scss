@@ -1,0 +1,32 @@
+.carousel-item {
+    background-color: map-get($colores , negro);
+
+    img {
+        @include alto-ancho (50%,35%);
+        margin: auto;
+    }
+}
+
+.carousel-inner {
+    @include alto-ancho (100%,100%);
+}
+
+.carousel-control-next-icon {
+    background-color: map-get($colores , rojo);
+}
+
+.carousel-control-prev-icon {
+    background-color: map-get($colores , rojo);
+}
+.button {
+    @include alto-ancho (0,110px);
+    display: inline-block;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: map-get($colores , negro);
+    font-size: 1.5rem;
+    color: map-get($colores , blanco);
+    font-weight: 500;
+}
+

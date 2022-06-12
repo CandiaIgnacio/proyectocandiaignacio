@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: map-get($posicion, centrado);
+    align-items: map-get($posicion, centrado);
+}
+
+
+.capas {
+    @include flex-absolute;
+    width: 0%;
+    height: 50vh;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    justify-content: map-get($posicion, centrado);
+    align-items: map-get($posicion, centrado);
+    overflow: hidden;
+    transition: .4s all;
+
+    h2 {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        font-size: 2.5em;
+        text-transform: uppercase;
+    }
+}
+
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        text-decoration: none;
+        font-size: 28px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: map-get($posicion, centrado);
+        background: #314652;
+        color: #000000;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: map-get($posicion, centrado);
+    justify-content: map-get($posicion, centrado);
+    flex-wrap: wrap;
+}

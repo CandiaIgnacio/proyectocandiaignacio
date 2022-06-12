@@ -1,0 +1,44 @@
+.icon {
+    @include alto-ancho (80px,80px); 
+    position: relative;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+    background-color: map-get($colores, rojo);
+
+    &:hover {
+        background-color: map-get($colores, rojo);
+        box-shadow: 0 0 20px map-get($colores, rojo);
+
+        &:nth-child(2) {
+            background-color: map-get($colores, rojo) 
+            box-shadow 0 0 20px map-get($colores, rojo);
+        }
+
+        &:nth-child(3) {
+            background-color: map-get($colores, rojo);
+            box-shadow: 0 0 20px map-get($colores, rojo);
+        }
+
+        circle {
+            stroke-dasharray: 500;
+        }
+    }
+
+    i {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.7rem;
+    }
+}
+
+svg {
+    circle {
+        stroke-dasharray: 150;
+        transition: all .8s ease-in-out;
+    }
+}

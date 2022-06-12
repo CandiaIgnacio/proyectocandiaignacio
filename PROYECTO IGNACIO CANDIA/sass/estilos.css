@@ -1,0 +1,304 @@
+.carousel-item {
+  background-color: black;
+}
+
+.carousel-item img {
+  margin: auto;
+  width: 35%;
+  height: 50%;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control-next-icon {
+  background-color: red;
+}
+
+.carousel-control-prev-icon {
+  background-color: red;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  height: 0;
+  border-radius: 0;
+  padding: 0;
+  width: 110px;
+  background-color: black;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.piedepagina {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: imagen;
+  width: 100%;
+  height: 30%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.formulario {
+  color: red;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  background-color: black;
+  width: 30%;
+  margin-left: 20%;
+}
+
+.form {
+  background-color: red;
+  width: 91%;
+}
+
+.casilla {
+  margin-left: 44%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 40%;
+  margin-left: 25%;
+}
+
+.boton {
+  margin-left: 48%;
+  margin-left: 43%;
+}
+
+.container-img {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 250px;
+      grid-template-rows: 250px;
+  grid-gap: 20px;
+}
+
+.container-img .box-img figure {
+  width: 100%;
+  height: 100%;
+}
+
+.container-img .box-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+}
+
+.container-img .box-img:nth-child(1) {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  grid-column-start: span 1;
+}
+
+.container-img .box-img:nth-child(4) {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+}
+
+.logoArde {
+  font-size: 5rem;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  text-decoration: none;
+}
+
+.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  gap: 20px;
+}
+
+.navegador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.navegador li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  margin: 1rem;
+  padding: 2.5rem;
+  font-size: 1.4rem;
+  font-size: 0.6rem;
+}
+
+.navegador:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.navegador ul {
+  gap: 60px;
+}
+
+.icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 50%;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  cursor: pointer;
+  background-color: red;
+}
+
+.icon:hover {
+  background-color: red;
+  -webkit-box-shadow: 0 0 20px red;
+          box-shadow: 0 0 20px red;
+}
+
+.icon:hover:nth-child(2) {
+  background-color: red box-shadow 0 0 20px red;
+}
+
+.icon:hover:nth-child(3) {
+  background-color: red;
+  -webkit-box-shadow: 0 0 20px red;
+          box-shadow: 0 0 20px red;
+}
+
+.icon:hover circle {
+  stroke-dasharray: 500;
+}
+
+.icon i {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+}
+
+svg circle {
+  stroke-dasharray: 150;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.capas {
+  width: 0%;
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+.capas h2 {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.buttons {
+  min-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #314652;
+  color: #000000;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,7 @@
+.piedepagina {
+    @include alto-ancho (30%,100%);
+    background-color: map-get($colores , negro );
+    display: grid;
+    grid-template-areas: imagen;
+    align-items: end;
+}
